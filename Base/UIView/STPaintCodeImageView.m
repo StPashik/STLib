@@ -1,9 +1,8 @@
 //
 //  STPaintCodeImageView.m
-//  gruzer
 //
 //  Created by StPashik on 01.06.15.
-//  Copyright (c) 2015 Legion. All rights reserved.
+//  Copyright (c) 2015 StPashik. All rights reserved.
 //
 
 #import "STPaintCodeImageView.h"

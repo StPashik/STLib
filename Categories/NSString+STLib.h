@@ -1,6 +1,5 @@
 //
 //  NSString+STLib.h
-//  algeron
 //
 //  Created by StPashik on 11.12.14.
 //  Copyright (c) 2014 StPashik. All rights reserved.

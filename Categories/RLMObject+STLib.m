@@ -1,6 +1,5 @@
 //
 //  RLMObject+STLib.m
-//  bileter
 //
 //  Created by StPashik on 01.04.15.
 //  Copyright (c) 2015 Legion. All rights reserved.

@@ -1,6 +1,5 @@
 //
 //  NSDate+StLib.m
-//  algeron
 //
 //  Created by StPashik on 22.12.14.
 //  Copyright (c) 2014 StPashik. All rights reserved.

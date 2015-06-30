@@ -1,6 +1,5 @@
 //
 //  NSTimer+STLib.h
-//  MarketDebt
 //
 //  Created by StPashik on 30.04.15.
 //  Copyright (c) 2015 StPashik. All rights reserved.
