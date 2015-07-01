@@ -79,9 +79,38 @@ Display images in the storyboard made in PaintCode. To use, create in storyboard
 
 --
 ###Extensions
+####NSArray+STLib
+```obj-c
+- (NSArray *)sortedOutletsByOriginY;
+- (NSArray *)sortedOutletsByOriginX;
+- (NSArray *)sortedOutletsByOriginXWithSuperview;
+- (NSArray *)sortedOutletsByTag;
+- (NSArray *)mapWithBlock:(id (^)(NSUInteger index, id obj))block;
+- (NSDictionary *)groupByBlock:(id(^)(NSUInteger index, id obj))block;
+- (BOOL)integerObjectIsExists:(NSInteger)integer;
+```
+####NSDate+STLib
+```obj-c
+//Compere methods
+- (BOOL)isLaterThanOrEqualTo:(NSDate*)date;
+- (BOOL)isEarlierThanOrEqualTo:(NSDate*)date;
+- (BOOL)isLaterThan:(NSDate*)date;
+- (BOOL)isEarlierThan:(NSDate*)date;
+//Clear time in date
+- (NSDate *)withOutTime;
+//Differrence date with intervals
+- (NSInteger)differenceFromDate:(NSDate *)date interval:(NSInteger)interval;
+//"today", "tomorrow" localized formating date
+- (NSString *)afterDate:(NSDate *)date dateFormat:(NSString *)dateFormat;
+//Format date to string
+- (NSString *)formattedStringWithFormat:(NSString *)format;
+```
 ####UIColor+STLib
 ```obj-c
+//Color from hex value
 + (UIColor *)colorWithHex:(NSUInteger)hex;
+//Color from hex value with alpha
 + (UIColor *)colorWithHex:(NSUInteger)hex alpha:(CGFloat)alpha;
+//Hex value from color
 - (long)hexValue;
 ```
