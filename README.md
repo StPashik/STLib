@@ -82,7 +82,8 @@ It contains all the constants needed for the library and work with the interface
 //string from time intrval in format "minuts:second:miliseconds"
 + (NSString *)stringFromTimeInterval:(NSTimeInterval)timeInterval
 //filer string for phone number
-+ (NSMutableString *)filteredPhoneStringFromStringWithFilter:(NSString *)string filter:(NSString *)filter
++ (NSMutableString *)filteredPhoneStringFromStringWithFilter:(NSString *)string
+                                                      filter:(NSString *)filter
 ```
 
 ---
