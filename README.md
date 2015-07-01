@@ -63,11 +63,12 @@ It contains all the constants needed for the library and work with the interface
 * `kSTLibTimeIntervalForWeek`
 * `kSTLibNumberOfDaysInWeek`
 
-#####Methods
-`+ (NSError *)validateEmail:(NSString *)email` - validate e-mail address
+####Methods
+```obj-c
++ (NSError *)validateEmail:(NSString *)email //validate e-mail address
++ (NSString *)launchImageName //launch image name
++ (NSString *)stringFromTimeInterval:(NSTimeInterval)timeInterval //string from time intrval in format "minuts:second:miliseconds"
++ (NSMutableString *)filteredPhoneStringFromStringWithFilter:(NSString *)string filter:(NSString *)filter //filer string for phone number
+```
 
-`+ (NSString *)launchImageName` - launch image name
-
-`+ (NSString *)stringFromTimeInterval:(NSTimeInterval)timeInterval` - string from time intrval in format "minuts:second:miliseconds"
-
-`+ (NSMutableString *)filteredPhoneStringFromStringWithFilter:(NSString *)string filter:(NSString *)filter` - filer string for phone number
+--
