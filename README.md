@@ -10,50 +10,58 @@ Jast drop folder into you project.
 ####STLib
 It contains all the constants needed for the library and work with the interface.
 #####Error codes
-`kSTErrorDomain`
-`kSTErrorRegInfoFailedCode`
-`kSTErrorModelIncorrectCode`
-`kSTErrorServerErrorCode`
+* `kSTErrorDomain`
+* `kSTErrorRegInfoFailedCode`
+* `kSTErrorModelIncorrectCode`
+* `kSTErrorServerErrorCode`
+
 #####Devices
-`IS_IPAD`
-`IS_IPHONE`
-`IS_RETINA`
+* `IS_IPAD`
+* `IS_IPHONE`
+* `IS_RETINA`
+
 #####Screen sizes
-`SCREEN_WIDTH`
-`SCREEN_HEIGHT`
-`SCREEN_MAX_LENGTH`
-`SCREEN_MIN_LENGTH`
+* `SCREEN_WIDTH`
+* `SCREEN_HEIGHT`
+* `SCREEN_MAX_LENGTH`
+* `SCREEN_MIN_LENGTH`
+
 #####iOS versions
-`IS_IPHONE_4_OR_LESS`
-`IS_IPHONE_5`
-`IS_IPHONE_6`
-`IS_IPHONE_6_PLUS`
+* `IS_IPHONE_4_OR_LESS`
+* `IS_IPHONE_5`
+* `IS_IPHONE_6`
+* `IS_IPHONE_6_PLUS`
+
 #####String errors
-`kSTLibRegInfoErrorEmptyEmail`
-`kSTLibRegInfoErrorIncorrectEmail`
-`kSTLibRegInfoErrorEmptyPhone`
-`kSTLibRegInfoErrorIncorrectPhone`
+* `kSTLibRegInfoErrorEmptyEmail`
+* `kSTLibRegInfoErrorIncorrectEmail`
+* `kSTLibRegInfoErrorEmptyPhone`
+* `kSTLibRegInfoErrorIncorrectPhone`
+
 #####UIAlertView strings
-`kSTLibAlertViewDefaultTitle`
-`kSTLibAlertViewInternetConnectionErrorString`
-`kSTLibAlertViewLocationNotDeniedErrorString`
+* `kSTLibAlertViewDefaultTitle`
+* `kSTLibAlertViewInternetConnectionErrorString`
+* `kSTLibAlertViewLocationNotDeniedErrorString`
+
 #####System version compare
-`SYSTEM_VERSION_EQUAL_TO(v)`
-`SYSTEM_VERSION_GREATER_THAN(v)`
-`SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)`
-`SYSTEM_VERSION_LESS_THAN(v)`
-`SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)`
-`IOS_8_OR_LATER`
-`IOS_7_OR_LATER`
+* `SYSTEM_VERSION_EQUAL_TO(v)`
+* `SYSTEM_VERSION_GREATER_THAN(v)`
+* `SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)`
+* `SYSTEM_VERSION_LESS_THAN(v)`
+* `SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)`
+* `IOS_8_OR_LATER`
+* `IOS_7_OR_LATER`
+
 #####Error color
-`kSTLibValidationErrorColor`
+* `kSTLibValidationErrorColor`
+
 #####Time intervals
-`kSTLibTimeIntervalForMinute`
-`kSTLibTimeIntervalForHour`
-`kSTLibTimeIntervalForDay`
-`kSTLibTimeIntervalForFiveDays`
-`kSTLibTimeIntervalForWeek`
-`kSTLibNumberOfDaysInWeek`
+* `kSTLibTimeIntervalForMinute`
+* `kSTLibTimeIntervalForHour`
+* `kSTLibTimeIntervalForDay`
+* `kSTLibTimeIntervalForFiveDays`
+* `kSTLibTimeIntervalForWeek`
+* `kSTLibNumberOfDaysInWeek`
 
 #####Methods
 `+ (NSError *)validateEmail:(NSString *)email` - validate e-mail address
