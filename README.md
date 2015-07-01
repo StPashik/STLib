@@ -72,3 +72,16 @@ It contains all the constants needed for the library and work with the interface
 ```
 
 --
+###Components
+####STPaintCodeImageView *- IBDesignable*
+Display images in the storyboard made in PaintCode. To use, create in storyboard UIView and assign class STPaintKodeImageViev. In to attribute inspector set **StyleKit** class name and **Canvas** name.
+>This component work with UIView and image may only show. I recomended use this only for static images in interface.
+
+--
+###Extensions
+####UIColor+STLib
+```obj-c
++ (UIColor *)colorWithHex:(NSUInteger)hex;
++ (UIColor *)colorWithHex:(NSUInteger)hex alpha:(CGFloat)alpha;
+- (long)hexValue;
+```
