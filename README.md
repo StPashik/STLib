@@ -2,7 +2,15 @@
 Library with helpers and extension. This library is assembled from the different projects and there may be small inaccuracies. The library does not pritenduet on originality, but if it will be useful to someone, that's good.
 >I would be grateful for tips and patches on your part
 
-* [Main](/STLib#main)
+---
+###Contents:
+
+* [**Install**](https://github.com/StPashik/STLib#install)
+* [**Main**](https://github.com/StPashik/STLib#main)
+* [**Components**](https://github.com/StPashik/STLib#components)
+* [**Extensions**](https://github.com/StPashik/STLib#extensions)
+
+--
 
 ###Install
 Jast drop folder into you project and import STLib.h where you need.
@@ -77,14 +85,35 @@ It contains all the constants needed for the library and work with the interface
 + (NSMutableString *)filteredPhoneStringFromStringWithFilter:(NSString *)string filter:(NSString *)filter
 ```
 
---
+---
 ###Components
 ####STPaintCodeImageView *- IBDesignable*
 Display images in the storyboard made in PaintCode. To use, create in storyboard UIView and assign class STPaintKodeImageViev. In to attribute inspector set **StyleKit** class name and **Canvas** name.
 >This component work with UIView and image may only show. I recomended use this only for static images in interface.
 
---
+---
 ###Extensions
+
+####Contents:
+
+* [**NSArray+STLib**](https://github.com/StPashik/STLib#nsarraystlib)
+* [**NSDate+STLib**](https://github.com/StPashik/STLib#nsdatestlib)
+* [**NSDateFormatter+STLib**](https://github.com/StPashik/STLib#nsdateformatterstlib)
+* [**NSDictionary+STLib**](https://github.com/StPashik/STLib#nsdictionarystlib)
+* [**NSError+STLib**](https://github.com/StPashik/STLib#nserrorstlib)
+* [**NSIndexPath+STLib**](https://github.com/StPashik/STLib#nsindexpathstlib)
+* [**NSObject+STLib**](https://github.com/StPashik/STLib#nsobjectstlib)
+* [**NSString+STLib**](https://github.com/StPashik/STLib#nsstringstlib)
+* [**NSTimer+STLib**](https://github.com/StPashik/STLib#nstimerstlib)
+* [**UIAlertView+STLib**](https://github.com/StPashik/STLib#uialertviewstlib)
+* [**UIColor+STLib**](https://github.com/StPashik/STLib#uicolorstlib)
+* [**UIImage+STLib**](https://github.com/StPashik/STLib#uiimagestlib)
+* [**UILabel+STLib**](https://github.com/StPashik/STLib#uilabelstlib)
+* [**UITextField+STLib**](https://github.com/StPashik/STLib#uitextfieldstlib)
+* [**RLMObject+STLib**](https://github.com/StPashik/STLib#rlmobjectstlib)
+
+--
+
 ####NSArray+STLib
 ```obj-c
 //Sort Outlets array methods
