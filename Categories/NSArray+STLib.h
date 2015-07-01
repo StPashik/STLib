@@ -9,6 +9,11 @@
 
 @interface NSArray (STLib)
 
+/**
+ *  Sort Outlets array methods
+ *
+ *  @return sorted array
+ */
 - (NSArray *)sortedOutletsByOriginY;
 - (NSArray *)sortedOutletsByOriginX;
 - (NSArray *)sortedOutletsByOriginXWithSuperview;

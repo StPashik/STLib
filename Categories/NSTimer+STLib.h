@@ -9,10 +9,28 @@
 
 @interface NSTimer (STLib)
 
+/**
+ *  Timer with block and run tick
+ *
+ *  @param inTimeInterval timer interval
+ *  @param inBlock        execution block
+ *  @param inRepeats      repeat YES/NO
+ *
+ *  @return instance timer
+ */
 + (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)inTimeInterval
                                       block:(void (^)(NSTimer *timer))inBlock
                                     repeats:(BOOL)inRepeats;
 
+/**
+ *  Timer with execution block
+ *
+ *  @param inTimeInterval timer interval
+ *  @param inBlock        execution block
+ *  @param inRepeats      repeat YES/NO
+ *
+ *  @return instance timer
+ */
 + (NSTimer *)timerWithTimeInterval:(NSTimeInterval)inTimeInterval
                              block:(void (^)(NSTimer *timer))inBlock
                            repeats:(BOOL)inRepeats;

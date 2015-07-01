@@ -9,6 +9,12 @@
 
 @interface NSObject (STLib)
 
+/**
+ *  Perform block after delay
+ *
+ *  @param block execution block
+ *  @param delay delay
+ */
 - (void)performBlock:(void (^)(void))block afterDelay:(NSTimeInterval)delay;
 
 @end

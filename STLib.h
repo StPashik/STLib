@@ -85,12 +85,39 @@ typedef NS_ENUM(NSUInteger, STLibPhoneFormat)
 
 @interface STLib : NSObject
 
+/**
+ *  Validate e-mail address
+ *
+ *  @param email e-mail string
+ *
+ *  @return error if invalid
+ */
 + (NSError *)validateEmail:(NSString *)email;
 
+/**
+ *  Launch image name
+ *
+ *  @return image name string
+ */
 + (NSString *)launchImageName;
 
+/**
+ *  String from time intrval in format "minuts:second:miliseconds"
+ *
+ *  @param timeInterval timeinterval
+ *
+ *  @return formated string
+ */
 + (NSString *)stringFromTimeInterval:(NSTimeInterval)timeInterval;
 
+/**
+ *  Filer string for phoe number
+ *
+ *  @param string string
+ *  @param filter filetr with format (# - number, another char without changes)
+ *
+ *  @return filtered string
+ */
 + (NSMutableString *)filteredPhoneStringFromStringWithFilter:(NSString *)string filter:(NSString *)filter;
 
 @end

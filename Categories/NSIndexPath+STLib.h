@@ -9,6 +9,13 @@
 
 @interface NSIndexPath (STLib)
 
+/**
+ *  Compare with indexPath
+ *
+ *  @param indexPath with whom compare
+ *
+ *  @return YES/NO
+ */
 - (BOOL)isEqualToIndexPath:(NSIndexPath *)indexPath;
 
 @end

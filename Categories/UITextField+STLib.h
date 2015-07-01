@@ -10,19 +10,39 @@
 @interface UITextField (STLib)
 
 @property (nonatomic, strong) UILabel   *label;
-
 @property (nonatomic, readonly) BOOL     isValid;
 
+/**
+ *  Set left padding
+ *
+ *  @param paddingValue padding value
+ */
 - (void)setLeftPadding:(int)paddingValue;
 
+/**
+ *  Set right padding
+ *
+ *  @param paddingValue padding value
+ */
 - (void)setRightPadding:(int)paddingValue;
 
+/**
+ *  Validate with animation
+ *
+ *  @return YES/NO
+ */
 - (BOOL)validateWithAnimation;
 
+/**
+ *  Validate with ping-pong animation
+ *
+ *  @return YES/NO
+ */
 - (BOOL)validateWithBackAnimationWithColor:(UIColor *)color;
 
+/**
+ *  Start animation
+ */
 - (void)startAnimationOfValidation;
-
-//- (void)startBackAnimationOfValidation;
 
 @end

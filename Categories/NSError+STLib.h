@@ -9,6 +9,14 @@
 
 @interface NSError (STLib)
 
+/**
+ *  Localized server error by response code if description error empty
+ *
+ *  @param code                 response code
+ *  @param LocalizedDescription response error description
+ *
+ *  @return new error with description
+ */
 + (NSError *)errorWithCode:(NSInteger)code
       localizedDescription:(NSString *)LocalizedDescription;
 
