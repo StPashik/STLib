@@ -88,9 +88,25 @@ It contains all the constants needed for the library and work with the interface
 
 ---
 ###Components
+
+####Contents:
+
+* [**STPaintCodeImageView**](#stpaintcodeimageview)
+* [**STRoundFrameButton**](#stroundframebutton)
+
+--
 ####STPaintCodeImageView *- IBDesignable*
 Display images in the storyboard made in PaintCode. To use, create in storyboard UIView and assign class STPaintKodeImageViev. In to attribute inspector set **StyleKit** class name and **Canvas** name.
 >This component work with UIView and image may only show. I recomended use this only for static images in interface.
+
+####STRoundFrameButton *- IBDesignable*
+Rounded button with customize parametrs. All parametrs customize in InterfaceBuilder. All parametrs set only *UIControlStateNormal* button state.
+#####Parametrs:
+* `borderColor` - border color
+* `titleColor` - title color. If *titleColor* is nil, title colored like border
+* `background` - background color
+* `radius` - corner radius
+* `border` - border width
 
 ---
 ###Extensions
