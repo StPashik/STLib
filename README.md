@@ -5,10 +5,10 @@ Library with helpers and extension. This library is assembled from the different
 ---
 ###Contents:
 
-* [**Install**](https://github.com/StPashik/STLib#install)
-* [**Main**](https://github.com/StPashik/STLib#main)
-* [**Components**](https://github.com/StPashik/STLib#components)
-* [**Extensions**](https://github.com/StPashik/STLib#extensions)
+* [**Install**](#install)
+* [**Main**](#main)
+* [**Components**](#components)
+* [**Extensions**](#extensions)
 
 --
 
