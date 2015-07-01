@@ -103,7 +103,7 @@ Display images in the storyboard made in PaintCode. To use, create in storyboard
 Rounded button with customize parametrs. All parametrs customize in InterfaceBuilder. All parametrs set only *UIControlStateNormal* button state.
 #####Parametrs:
 * `borderColor` - border color
-* `titleColor` - title color. If *titleColor* is nil, title colored like border
+* `titleColor` - title color. If *titleColor* is *Default*, title colored like border
 * `background` - background color
 * `radius` - corner radius
 * `border` - border width
