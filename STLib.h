@@ -111,7 +111,7 @@ typedef NS_ENUM(NSUInteger, STLibPhoneFormat)
 + (NSString *)stringFromTimeInterval:(NSTimeInterval)timeInterval;
 
 /**
- *  Filer string for phoe number
+ *  Filer string for phone number
  *
  *  @param string string
  *  @param filter filetr with format (# - number, another char without changes)
