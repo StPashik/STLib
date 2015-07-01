@@ -2,8 +2,10 @@
 Library with helpers and extension. This library is assembled from the different projects and there may be small inaccuracies. The library does not pritenduet on originality, but if it will be useful to someone, that's good.
 >I would be grateful for tips and patches on your part
 
+* [Main](/STLib#main)
+
 ###Install
-Jast drop folder into you project.
+Jast drop folder into you project and import STLib.h where you need.
 
 --
 ###Main
