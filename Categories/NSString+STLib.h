@@ -31,7 +31,8 @@
  *
  *  @return string height
  */
-- (CGFloat)heightWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width;
+- (CGFloat)heightWithFont:(UIFont *)font
+       constrainedToWidth:(CGFloat)width;
 
 /**
  *  Height for string with font and free width

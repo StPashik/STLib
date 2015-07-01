@@ -65,10 +65,14 @@ It contains all the constants needed for the library and work with the interface
 
 ####Methods
 ```obj-c
-+ (NSError *)validateEmail:(NSString *)email //validate e-mail address
-+ (NSString *)launchImageName //launch image name
-+ (NSString *)stringFromTimeInterval:(NSTimeInterval)timeInterval //string from time intrval in format "minuts:second:miliseconds"
-+ (NSMutableString *)filteredPhoneStringFromStringWithFilter:(NSString *)string filter:(NSString *)filter //filer string for phone number
+//validate e-mail address
++ (NSError *)validateEmail:(NSString *)email
+//launch image name
++ (NSString *)launchImageName
+//string from time intrval in format "minuts:second:miliseconds"
++ (NSString *)stringFromTimeInterval:(NSTimeInterval)timeInterval
+//filer string for phone number
++ (NSMutableString *)filteredPhoneStringFromStringWithFilter:(NSString *)string filter:(NSString *)filter
 ```
 
 --
@@ -81,6 +85,7 @@ Display images in the storyboard made in PaintCode. To use, create in storyboard
 ###Extensions
 ####NSArray+STLib
 ```obj-c
+//Sort Outlets array methods
 - (NSArray *)sortedOutletsByOriginY;
 - (NSArray *)sortedOutletsByOriginX;
 - (NSArray *)sortedOutletsByOriginXWithSuperview;
@@ -105,6 +110,86 @@ Display images in the storyboard made in PaintCode. To use, create in storyboard
 //Format date to string
 - (NSString *)formattedStringWithFormat:(NSString *)format;
 ```
+####NSDateFormatter+STLib
+```obj-c
+//Creates and returns instance with given date format
++ (NSDateFormatter *)dateFormatterWithDateFormat:(NSString *)aDateFormat;
+```
+####NSDictionary+STLib
+```obj-c
+//Dictionary object nil by key
+- (id)objectNotNullForKey:(id)key;
+//Object by integer key
+- (id)objectForIntegerKey:(NSInteger)integerKey;
+//Num key for integer key
+- (NSNumber *)keyForIntegerKey:(NSInteger)integerKey;
+```
+####NSError+STLib
+```obj-c
+//Localized server error by response code if description error empty
++ (NSError *)errorWithCode:(NSInteger)code
+      localizedDescription:(NSString *)LocalizedDescription;
+```
+####NSIndexPath+STLib
+```obj-c
+//Compare with indexPath
+- (BOOL)isEqualToIndexPath:(NSIndexPath *)indexPath;
+```
+####NSObject+STLib
+```obj-c
+//Perform block after delay
+- (void)performBlock:(void (^)(void))block
+          afterDelay:(NSTimeInterval)delay;
+```
+####NSString+STLib
+```obj-c
+//Check string for empty
+- (BOOL)notEmpty;
+//Clera spaces in string
+- (NSString *)stringByRemovingSpaces;
+//Height for string with font and accuracy width
+- (CGFloat)heightWithFont:(UIFont *)font
+       constrainedToWidth:(CGFloat)width;
+//Height for string with font and free width
+- (CGFloat)heightWithFont:(UIFont *)font;
+//Width for string with font and free height
+- (CGFloat)widthWithFont:(UIFont *)font;
+//sha1 code
+- (NSString *)sha1;
+//Delete HTML symbols from string
+- (NSString *)stringByStrippingHTML;
+//Decode HTML symbols
+- (NSString *)stringByDecodedHTMLSymbols;
+//Clear phone number
+- (NSString *)unformattedPhoneNumber;
+```
+####NSTimer+STLib
+```obj-c
+//Timer with block and run tick
++ (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)inTimeInterval
+                                      block:(void (^)(NSTimer *timer))inBlock
+                                    repeats:(BOOL)inRepeats;
+//Timer with execution block
++ (NSTimer *)timerWithTimeInterval:(NSTimeInterval)inTimeInterval
+                             block:(void (^)(NSTimer *timer))inBlock
+                           repeats:(BOOL)inRepeats;
+```
+####UIAlertView+STLib
+```obj-c
+//Init with internet connection localize error
+- (id)initInternetConnectionError;
+//Init witn location denied error
+- (id)initLocationNotDeniedError;
+//Init with message
+- (id)initWithMessage:(NSString *)message;
+//Init with message and title
+- (id)initWithTitle:(NSString *)title
+            message:(NSString *)message;
+//Init with message and title. With delegate
+- (id)initQuestionWithTitle:(NSString *)title
+                    message:(NSString *)message
+                   delegate:(id)delegate;
+```
 ####UIColor+STLib
 ```obj-c
 //Color from hex value
@@ -113,4 +198,55 @@ Display images in the storyboard made in PaintCode. To use, create in storyboard
 + (UIColor *)colorWithHex:(NSUInteger)hex alpha:(CGFloat)alpha;
 //Hex value from color
 - (long)hexValue;
+```
+####UIImage+STLib
+```obj-c
+//Image from color value
++ (UIImage *)imageWithColor:(UIColor *)color
+                       size:(CGSize)size;
+//Gradient image from colors value
++ (UIImage *)radialGradientImage:(CGSize)size
+                      startColor:(UIColor *)startColor
+                        endColor:(UIColor *)endColor;
+//Rounded image with color fill and border
++ (UIImage *)roundedImageWithFillColor:(UIColor *)fillColor
+                           borderColor:(UIColor *)borderColor
+                                  size:(CGSize)size
+                                border:(CGFloat)border;
+//Colored image with color
+- (UIImage *)coloredImageWithColor:(UIColor *)color;
+//Tint image with color
+- (UIImage *)imageTintedWithColor:(UIColor *)color;
+//Tint image with color and fraction
+- (UIImage *)imageTintedWithColor:(UIColor *)color
+                         fraction:(CGFloat)fraction;
+```
+####UILabel+STLib
+```obj-c
+//Invalidate animation with kSTLibValidationErrorColor
+- (void)startAnimationOfValidation;
+//Invalidate animation with kSTLibValidationErrorColor with limit of repeat
+- (void)startAnimationWithLimit:(NSInteger)limit;
+```
+####UITextField+STLib
+```obj-c
+@property (nonatomic, strong) UILabel *label;
+@property (nonatomic, readonly) BOOL   isValid;
+
+//Set left padding
+- (void)setLeftPadding:(int)paddingValue;
+//Set right padding
+- (void)setRightPadding:(int)paddingValue;
+//Validate with animation
+- (BOOL)validateWithAnimation;
+//Validate with ping-pong animation
+- (BOOL)validateWithBackAnimationWithColor:(UIColor *)color;
+//Start animation
+- (void)startAnimationOfValidation;
+```
+####RLMObject+STLib
+```obj-c
+//Get RLMObject by primaryKey.
+//If object in realm not found, return \b nil.
++ (instancetype)objectByPrimaryKey:(id)primaryKey;
 ```

@@ -17,7 +17,8 @@
  *
  *  @return image
  */
-+ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
++ (UIImage *)imageWithColor:(UIColor *)color
+                       size:(CGSize)size;
 
 /**
  *  Gradient image from colors value
@@ -73,6 +74,7 @@
  *
  *  @return tint image
  */
-- (UIImage *)imageTintedWithColor:(UIColor *)color fraction:(CGFloat)fraction;
+- (UIImage *)imageTintedWithColor:(UIColor *)color
+                         fraction:(CGFloat)fraction;
 
 @end

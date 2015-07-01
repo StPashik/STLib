@@ -40,7 +40,8 @@
  *
  *  @return instance alertView with "OK" button
  */
-- (id)initWithTitle:(NSString *)title message:(NSString *)message;
+- (id)initWithTitle:(NSString *)title
+            message:(NSString *)message;
 
 /**
  *  Init with message and title. With delegate
@@ -51,6 +52,8 @@
  *
  *  @return instance alertView with "OK" button
  */
-- (id)initQuestionWithTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate;
+- (id)initQuestionWithTitle:(NSString *)title
+                    message:(NSString *)message
+                   delegate:(id)delegate;
 
 @end
