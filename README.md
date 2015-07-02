@@ -91,8 +91,8 @@ It contains all the constants needed for the library and work with the interface
 
 ####Contents:
 
-* [**STPaintCodeImageView**](#stpaintcodeimageview---ibdesignable)
-* [**STRoundFrameButton**](#stroundframebutton---ibdesignable)
+* [**STPaintCodeImageView**](#stpaintcodeimageview)
+* [**STRoundFrameButton**](#stroundframebutton)
 
 --
 ####STPaintCodeImageView `IBDesignable`
