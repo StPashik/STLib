@@ -19,4 +19,8 @@
  */
 + (instancetype)objectByPrimaryKey:(id)primaryKey;
 
+- (instancetype)shallowCopy;
+- (instancetype)deepCopy;
+- (void)mergePropertiesFromObject:(id)object;
+
 @end
