@@ -296,5 +296,10 @@ Rounded button with customize parametrs. All parametrs customize in InterfaceBui
 ```obj-c
 //Get RLMObject by primaryKey.
 //If object in realm not found, return \b nil.
-+ (instancetype)objectByPrimaryKey:(id)primaryKey;
++ (instancetype)objectByPrimaryKey:(id)primaryKey
+
+//copy Realm objects
+- (instancetype)shallowCopy;
+- (instancetype)deepCopy;
+- (void)mergePropertiesFromObject:(id)object;
 ```
